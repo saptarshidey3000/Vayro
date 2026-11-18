@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* VAYRO Design System Color Palette */
+    --background: #0B1219;
+    --background-secondary: #111C27;
+    --card: #1B2936;
+    --card-foreground: #E5EDF4;
+    --popover: #111C27;
+    --popover-foreground: #E5EDF4;
+    --foreground: #E5EDF4;
+    --muted: #111C27;
+    --muted-foreground: #91A2B2;
+    --border: #293B4B;
+    --input: #293B4B;
+    --ring: #36C995;
+
+    /* Accent & Brand Actions */
+    --primary: #36C995;
+    --primary-foreground: #0B1219;
+    --secondary: #1B2936;
+    --secondary-foreground: #E5EDF4;
+    --accent: #1B2936;
+    --accent-foreground: #36C995;
+
+    /* Feedback & Status States */
+    --destructive: #EF6868;
+    --destructive-foreground: #FFFFFF;
+    --warning: #F0B65B;
+    --warning-foreground: #0B1219;
+    --info: #70A9E8;
+    --info-foreground: #0B1219;
+
+    /* Geometry Tokens */
+    --radius-sm: 0.75rem; /* 12px */
+    --radius: 0.875rem;   /* 14px */
+    --radius-md: 1rem;     /* 16px */
+    --radius-lg: 1.25rem;  /* 20px */
+
+    /* Typography Token */
+    --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: var(--radius-sm);
+  --radius: var(--radius);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+
+  --font-sans: var(--font-inter);
+}
+
+* {
+  border-color: var(--border);
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100dvh;
+}
